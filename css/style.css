@@ -1,7 +1,14 @@
 body {
   overflow-x: hidden; 
   background: #F9F9FE;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
+
+p,ul,ol,li,th,td,a,h1,h2,h3,h4,h5{
+  font-family: 'Poppins', sans-serif;
+} 
+
 
 .btn-primary {
   color: #fff;
@@ -11,10 +18,7 @@ body {
     font-size: 18px;
     font-weight: 600;
 }
-.toggle-menu{
-  margin-top: 20px;
-  margin-left: 30px;
-}
+
 
 
 /*================================ login page ========================================*/
@@ -242,11 +246,15 @@ body {
 
 
 
+
+
+
+
+
+
 /* ========================================================USER DASHBOARD=============================================================== */
 
-.top-menubar{
-  width: 100%;
-}
+
 
 .edap-menubar{
   display: flex;
@@ -254,6 +262,10 @@ body {
   justify-content: space-between;
   background: transparent;
 }
+.toggle-menu{
+  margin-top: 20px;
+}
+
 .btn-default{
   color: #fff;
   background-color: #03a9f4;
@@ -324,7 +336,7 @@ body {
   padding-left: 10px; 
 }
 
-.edap-profile-image a img {
+.edap-profile-image .user-image img {
   border-radius: 30px;
   width: 90% !important;
   position: relative; 
@@ -369,13 +381,6 @@ body {
 
 /* =============================MAIN BODY PART================================ */
 
-.wrapper {
-  padding-left: 0; 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .wrapper .bg-light {
   background-color: transparent !important;
 }
@@ -411,13 +416,6 @@ body {
   position: relative; 
 }
 
-/* .wrapper .bg-light .list-group a:hover {
-  background-color: #6969a2 !important;
-  transition: all 0.5s ease-in;
-  color: #fff;
-  width: 105%;
-  position: relative; 
-} */
 
 .wrapper .bg-light .list-group a {
   font-size: 18px;
@@ -425,11 +423,17 @@ body {
 }
 
 .wrapper #content {
-  display: flex; 
+position: fixed;
+}
+
+
+.wrapper #sidebar .sidebar-header img {
+  width: 100%; 
+  padding: 10px;
 }
 
 .wrapper #sidebar {
-  min-width: 195px;
+  min-width: 225px;
   max-width: 300px;
   background: #fff;
   transition: all 0.5s;
@@ -444,6 +448,20 @@ body {
   display: block; 
 }
 
+.collapse-img {
+  display: none;
+}
+
+.wrapper #sidebar.active .collapse-img {
+  display: block; 
+  width: 100px;
+}
+
+.wrapper #sidebar.active .main-img {
+  display: none;
+}
+
+
 .wrapper #sidebar.active .dropdown-toggle::after {
   top: auto;
   bottom: 10px;
@@ -452,6 +470,7 @@ body {
   -ms-transform: translateX(50%);
   transform: translateX(50%); 
 }
+
 .sidebar-header{
   border-bottom: 1px solid #ddd;
   padding-bottom: 40px;
@@ -472,22 +491,14 @@ body {
 }
 
 
-.wrapper #sidebar .sidebar-header img {
-  padding: 10px;
-  background: #fff;
-  width: 78%; 
-}
 
-.wrapper #sidebar .sidebar-header img {
-  width: 100%; 
-}
-
+/* 
 .wrapper #sidebar.active .sidebar-header img {
   width: 121px;
   height: 80px; 
   background: url("../img/Layer 2.png");
   background-repeat: no-repeat;
-}
+} */
 
 .wrapper #sidebar ul.components {
   padding: 5px 0; 
@@ -502,9 +513,6 @@ body {
   margin-right: 10px; 
 }
 
-/* .wrapper #sidebar ul li .active {
-  background: #55b4ee; 
-} */
 
 .wrapper #sidebar ul li.active a {
   color: #fff; 
@@ -522,34 +530,7 @@ body {
   transform: translateY(-50%); 
 }
 
-/* .wrapper ul ul a {
-  font-size: 0.9em !important;
-  padding-left: 30px !important;
-  background: #6d7fcc; 
-}
 
-.wrapper ul.CTAs {
-  padding: 20px; 
-}
-
-.wrapper ul.CTAs a {
-  text-align: center;
-  font-size: 0.9em !important;
-  display: block;
-  border-radius: 5px;
-  margin-bottom: 5px; 
-} */
-
-/* .wrapper a.download {
-  background: #fff;
-  color: #7386D5; 
-} */
-
-/* .wrapper a.article,
-.wrapper a.article:hover {
-  background: #6d7fcc !important;
-  color: #fff !important; 
-} */
 
 .sidebar  .dashboard {
   padding: 8px 0px;
@@ -573,9 +554,21 @@ body {
   margin-right: 10px;
 }
 
+.dropdown-arrow-img {
+  position: absolute;
+  right: 10px;
+}
+
+
+.dropdown-arrow-img img{
+  width: 7px;
+  height: 10px;
+}
+
+
 .sign-out{
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   left: 18px;
 }
 
@@ -595,14 +588,14 @@ body {
 
 
 /* ============================================================USERS===================================================== */
+
+
 .edap-users-content{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 10px;
   padding-right: 42px;
-  padding-left: 26px;
- 
 }
 
 .edap-users-new-user{
@@ -618,12 +611,6 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
-
-
-
-
-
-
 
 .edap-users-action-button{
   display: flex;
@@ -659,7 +646,6 @@ body {
   margin-top: 7px;
 }
 .edap-users-content-header{
-  padding-left: 30px;
   padding-top: 20px;
 }
 
@@ -679,7 +665,6 @@ body {
 
 .user-table{
   background: #fff;
-  margin-left: 30px;
   margin-right: 40px;
   margin-bottom: 20px;
 }
@@ -692,6 +677,7 @@ body {
 .user-table th{
   padding-bottom: 20px;
 }
+
 .user-table tr,td{
   padding: 20px;
 }
@@ -702,7 +688,6 @@ body {
   height: 40px;
   margin-right: 10px;
 }
-
 
 .user-table .green {
   border: 1px solid #33B438;
@@ -765,6 +750,10 @@ body {
   display: none;
 }
 
+/* .edap-users-content .dataTables_length{
+  display: block;
+} */
+
 table.dataTable thead .sorting{
   background-image: none;
 }
@@ -773,9 +762,20 @@ table.dataTable thead .sorting_asc {
   background-image: none;
 }
 
+table.dataTable thead .sorting_dec {
+  background-image: none;
+}
+
 thead th{
   background: #D8F2FF;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
+table.dataTable thead th{
+  padding: 10px 18px;
+  border-bottom: 1px solid #ddd;
+}
+
 .dataTables_wrapper {
   position: relative;
   clear: both;
@@ -785,9 +785,10 @@ thead th{
   border-radius: 8px;
 }
 
-table.dataTable.no-footer {
 
-  border-radius: 8px;
+table.dataTable.no-footer {
+  border-bottom: 1px solid #d1cccc;
+  border-radius: 0;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
@@ -800,6 +801,14 @@ table.dataTable.no-footer {
 
 .dataTables_info{
   padding-left: 20px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+  cursor: default;
+  color: #666 !important;
+  border: 1px solid #00000087;
+  border-radius: 8px;
+  margin: 10px;
 }
 
 /* =================================================== PERMISSION =================================================== */
