@@ -2,7 +2,6 @@ body {
   overflow-x: hidden; 
   background: #F9F9FE;
   font-family: 'Poppins', sans-serif;
-  font-family: 'Montserrat', sans-serif;
 }
 
 p,ul,ol,li,th,td,a,h1,h2,h3,h4,h5{
@@ -45,6 +44,24 @@ p,ul,ol,li,th,td,a,h1,h2,h3,h4,h5{
   line-height: 43px;
   height: 45px;
 }
+
+.btn-default:hover{
+  color: #fff;
+  background-color: #03a9f4;
+  border-color: #03a9f4;
+  padding: 3px 10px;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 43px;
+  height: 45px;
+}
+
+
+
+
+
+
+
 .form-control {
   display: block;
   width: 100%;
@@ -69,10 +86,10 @@ p,ul,ol,li,th,td,a,h1,h2,h3,h4,h5{
   top: 21px;
 }
 
-.navbar-nav .nav-item {
+/* .navbar-nav .nav-item {
   position: relative;
   margin-top: 4px; 
-}
+} */
 
 #navbarDropdown{
 
@@ -101,8 +118,7 @@ p,ul,ol,li,th,td,a,h1,h2,h3,h4,h5{
 
 .navbar-nav .dropdown {
   position: relative;
-  top: 1px;
-  padding-left: 10px; 
+  top: 5px;
 }
 
 .edap-profile-image .user-image img {

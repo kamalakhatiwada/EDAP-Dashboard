@@ -1,12 +1,11 @@
 body {
     overflow-x: hidden; 
     background: #F9F9FE;
-    font-family: 'Poppins', sans-serif;
     font-family: 'Montserrat', sans-serif;
   }
   
   p,ul,ol,li,th,td,a,h1,h2,h3,h4,h5{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   } 
   
   
