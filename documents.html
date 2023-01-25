@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Documents</title>
+
+     <!-- bootstrap css -->
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+     <!-- materials design icon -->
+     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+ 
+     <!-- themify icons -->
+     <link href="assets/css/themify-icons.css" rel="stylesheet">
+     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+
+     <!-- data-tables -->
+     <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css">
+
+     <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+   
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+<section class="wrapper">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-md-2 ">
+                <div id="content">
+                    <nav class="sidebar card py-2" id="sidebar">
+                        <div class="sidebar-header">
+                            <div class="collapse-img">
+                                <a class="navbar-brand" href="#"> <img src="./img/Layer 2.png" alt=""> </a>
+                            </div>
+                           <div class="main-img">
+                                <a class="navbar-brand" href="#"> <img src="./img/logo.png" alt=""> </a>
+                           </div>
+                           
+                        </div>
+                        <ul class="nav flex-column" id="nav_accordion">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#">  <img src="./img/darhboard.png" alt=""> Dashboard </a>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <a class="nav-link" href="#">  <img src="./img/Group 9725.png" alt="">Setup <span class="dropdown-arrow-img"><img src="./img/Vector 9.png" alt="" class="arrow-right"> </span> </a>
+                                <ul class="submenu collapse">
+                                    <li><a class="nav-link" href="#">Submenu item 1 </a>
+                                        <ul class="submenu collapse">
+                                            <li><a class="nav-link" href="#">Submenu item 1 </a></li>
+                                            <li><a class="nav-link" href="#">Submenu item 2 </a></li>
+                                            <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link" href="#">Submenu item 2 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-submenu dashboard">
+                                
+                                <a class="nav-link" href="#">   <img src="./img/Paper_light.png" alt=""> Document<span class="dropdown-arrow-img"><img src="./img/Vector 9.png" alt="" class="arrow-right"> </span> </a>
+                                <ul class="submenu collapse">
+                                    <li><a class="nav-link" href="#">Submenu item 4 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 5 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 6 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 7 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                
+                                <a class="nav-link" href="#">     <img src="./img/CPU_light.png" alt="">Equipment <span class="dropdown-arrow-img"><img src="./img/Vector 9.png" alt="" class="arrow-right"> </span></a>
+                                <ul class="submenu collapse">
+                                    <li><a class="nav-link" href="#">Submenu item 8 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 9 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 10 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 11 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">            
+                                
+                                <a class="nav-link" href="#"><img src="./img/Question.png" alt=""> Help </a>
+                            </li>
+                            
+                        </ul>
+                        <div class="sign-out">
+                            <a href="#"> <img src="./img/Sign_out_squre.png" alt=""> Sign Out </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="top-menubar">
+                    <div class="edap-menubar">
+                        <div class="toggle-menu">
+                            <button type="button" id="sidebarCollapse" class="btn btn-default">
+                                <i class="lni lni-menu"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="nav navbar-nav ml-auto">
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                        <i class="lni lni-search-alt"></i>
+                                    </form>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <!-- <i class="ti ti-bell"></i> -->
+                                            <i class="lni lni-alarm"></i>
+                                            <span class="notification"></span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">Someone liked your picture</a>
+                                            <a class="dropdown-item" href="#">New Comments</a>
+                                            <a class="dropdown-item" href="#">Sitaladdednew picture</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <div class="edap-profile">
+                                            <div class="client-name">
+                                                <h3>Courtney Henry</h3>
+                                                <span class="post">Welcome Back</span>
+                                              </div>
+                                              <div class="edap-profile-image">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                   <span class="user-image">
+                                                        <img src="./img/user-img.jpg" alt="">
+                                                   </span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="#">Edit your profile</a>
+                                                    <a class="dropdown-item" href="#">Change password</a>
+                                                    <a class="dropdown-item" href="#">Logout</a>
+                                                </div>
+                                              </div>
+                                        </div>
+                                     
+                                       
+                                        
+                                    </li>
+                                </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        
+                    </div>
+                  
+                   
+                </div>
+                <div class="edap-users-content-header">
+                    <h2>DOCUMENTS</h2>
+                    <p>Lorem ipsum dolor</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Documents</a></li>
+                          <li class="breadcrumb-item"><a href="#">Document Management</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Task Management</li>
+                        </ol>
+                      </nav>
+                </div>
+                <div>
+                    <h2>Document Information</h2>
+                      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <nav class="sidebar card py-2 mb-4">
+                                        <ul class="nav flex-column" id="nav_accordion">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> First </a>
+                                            </li>
+                                            <li class="nav-item has-submenu">
+                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i> </a>
+                                                <ul class="submenu collapse">
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 1 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 2 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 3 </a> </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item has-submenu">
+                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i> </a>
+                                                <ul class="submenu collapse">
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 4 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 5 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 6 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 7 </a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item has-submenu">
+                                                <a class="nav-link" href="#"> <i class="lni lni-folder"></i> Dropdown<i class="bi small bi-caret-down-fill"></i> </a>
+                                                <ul class="submenu collapse">
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 8 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 9 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 10 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 11 </a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> Fifth </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> First </a>
+                                            </li>
+                                            <li class="nav-item has-submenu">
+                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i> </a>
+                                                <ul class="submenu collapse">
+                                                    <li>
+                                                        <a class="nav-link" href="#"> <i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i></a>
+                                                        <ul class="submenu collapse">
+                                                            <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 1 </a></li>
+                                                            <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 2 </a></li>
+                                                            <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 3 </a> </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 2 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 3 </a> </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item has-submenu">
+                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i> </a>
+                                                <ul class="submenu collapse">
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 4 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 5 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 6 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 7 </a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item has-submenu">
+                                                
+                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown<i class="lni lni-chevron-down"></i></a>
+                                                <ul class="submenu collapse">
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 8 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 9 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 10 </a></li>
+                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 11 </a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> Fifth </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-md-9">
+                                    <div>
+                                        <table>
+                                            <caption style="caption-side: top;">Task Description</caption>
+                                            <tr>
+                                                <td>Task Name</td>
+                                                <td>Task 1</td>
+                                                <td>Equipment Type</td>
+                                                <td>Motor</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Access Type:</td>
+                                                <td>Online</td>
+                                                <td>Frequency:</td>
+                                                <td>10 kg</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Trade Type:</td>
+                                                <td>---</td>
+                                                <td>Strategy:</td>
+                                                <td>Predictive Maintenance</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div>
+                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Equipment</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Notes</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Subtask</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Pictures</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tables</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Parts</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Strategy</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Risk Assessment</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Attachment</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reference</button>
+                                              </li>
+                                          </ul>
+                                          <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                            </div>
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </div>
+                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </div>
+                      </div>
+                      
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</section>
+    
+  <!-- script -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="DataTables/datatables.min.js"></script>
+<!-- custom js -->
+<script src="assets/js/scripts.js"></script>
+
+
+</body>
+
+</html>
+
+
