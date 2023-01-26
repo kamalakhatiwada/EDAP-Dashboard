@@ -166,8 +166,16 @@
                         </ol>
                       </nav>
                 </div>
-                <div>
-                    <h2>Document Information</h2>
+                <div class="document-info-content">
+                    <div class="document-info-header">
+                        <div>
+                            <h2>Document Information</h2>
+                        </div>
+                        <div>
+                            <a href="" class="btn btn-primary">Review</a>
+                        </div>
+                    </div>
+                
                       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                           <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
@@ -178,95 +186,95 @@
                         <li class="nav-item" role="presentation">
                           <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
                         </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
-                        </li>
                       </ul>
                       <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                             <div class="row">
-                                <div class="col-md-3">
-                                    <nav class="sidebar card py-2 mb-4">
-                                        <ul class="nav flex-column" id="nav_accordion">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> First </a>
-                                            </li>
-                                            <li class="nav-item has-submenu">
-                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i> </a>
-                                                <ul class="submenu collapse">
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 1 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 2 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 3 </a> </li>
-                                                </ul>
-                                            </li>
-                                            <li class="nav-item has-submenu">
-                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i> </a>
-                                                <ul class="submenu collapse">
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 4 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 5 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 6 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 7 </a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="nav-item has-submenu">
-                                                <a class="nav-link" href="#"> <i class="lni lni-folder"></i> Dropdown<i class="bi small bi-caret-down-fill"></i> </a>
-                                                <ul class="submenu collapse">
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 8 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 9 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 10 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 11 </a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> Fifth </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> First </a>
-                                            </li>
-                                            <li class="nav-item has-submenu">
-                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i> </a>
-                                                <ul class="submenu collapse">
-                                                    <li>
-                                                        <a class="nav-link" href="#"> <i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i></a>
-                                                        <ul class="submenu collapse">
-                                                            <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 1 </a></li>
-                                                            <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 2 </a></li>
-                                                            <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 3 </a> </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 2 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 3 </a> </li>
-                                                </ul>
-                                            </li>
-                                            <li class="nav-item has-submenu">
-                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i> </a>
-                                                <ul class="submenu collapse">
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 4 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 5 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 6 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 7 </a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="nav-item has-submenu">
-                                                
-                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown<i class="lni lni-chevron-down"></i></a>
-                                                <ul class="submenu collapse">
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 8 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 9 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 10 </a></li>
-                                                    <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 11 </a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#"><i class="lni lni-folder"></i> Fifth </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
+                                <div class="col-md-2">
+                                    <div class="document-info-sidebar-block">
+                                        <nav class="sidebar card py-2 mb-4 scrollbar-horizontal" id="document-info-sidebar">
+                                            <ul class="nav flex-column" id="nav_accordion">
+                                                <li class="nav-item document-info-item">
+                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> First </a>
+                                                </li>
+                                                <li class="nav-item has-submenu">
+                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i> </a>
+                                                    <ul class="submenu collapse">
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 1 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 2 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 3 </a> </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item has-submenu">
+                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i> </a>
+                                                    <ul class="submenu collapse">
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 4 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 5 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 6 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 7 </a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item has-submenu">
+                                                    <a class="nav-link" href="#"> <i class="lni lni-folder"></i> Dropdown<i class="bi small bi-caret-down-fill"></i> </a>
+                                                    <ul class="submenu collapse">
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 8 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 9 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 10 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 11 </a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> Fifth </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> First </a>
+                                                </li>
+                                                <li class="nav-item has-submenu">
+                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i> </a>
+                                                    <ul class="submenu collapse">
+                                                        <li>
+                                                            <a class="nav-link" href="#"> <i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i></a>
+                                                            <ul class="submenu collapse">
+                                                                <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 1 </a></li>
+                                                                <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 2 </a></li>
+                                                                <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 3 </a> </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 2 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 3 </a> </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item has-submenu">
+                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown <i class="lni lni-chevron-down"></i> </a>
+                                                    <ul class="submenu collapse">
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 4 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 5 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 6 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 7 </a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item has-submenu">
+                                                    
+                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> Dropdown<i class="lni lni-chevron-down"></i></a>
+                                                    <ul class="submenu collapse">
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 8 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 9 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 10 </a></li>
+                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Submenu item 11 </a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> Fifth </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                               
                                 </div>
-                                <div class="col-md-9">
-                                    <div>
+                                <div class="col-md-10">
+                                    <div class="document-info-table">
                                         <table>
-                                            <caption style="caption-side: top;">Task Description</caption>
+                                            <caption>Task Description</caption>
                                             <tr>
                                                 <td>Task Name</td>
                                                 <td>Task 1</td>
@@ -287,81 +295,39 @@
                                             </tr>
                                         </table>
                                     </div>
-                                    <div>
-                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                            <li class="nav-item" role="presentation">
-                                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Equipment</button>
+                                    <div class="document-info-tab">
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                              <a class="nav-link active" aria-current="page" href="#">Active</a>
                                             </li>
-                                            <li class="nav-item" role="presentation">
-                                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Notes</button>
+                                            <li class="nav-item">
+                                              <a class="nav-link"  href="#" >Dropdown</a>
                                             </li>
-                                            <li class="nav-item" role="presentation">
-                                              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Subtask</button>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Link</a>
                                             </li>
-                                            <li class="nav-item" role="presentation">
-                                              <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Pictures</button>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Link</a>
                                             </li>
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tables</button>
+                                            <li class="nav-item">
+                                                <a class="nav-link"  href="#" >Dropdown</a>
                                               </li>
-                                              <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Parts</button>
+                                              <li class="nav-item">
+                                                <a class="nav-link" href="#">Link</a>
                                               </li>
-                                              <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Strategy</button>
+                                              <li class="nav-item">
+                                                <a class="nav-link" href="#">Link</a>
                                               </li>
-                                              <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Risk Assessment</button>
+                                              <li class="nav-item">
+                                                <a class="nav-link"  href="#" >Dropdown</a>
                                               </li>
-                                              <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Attachment</button>
+                                              <li class="nav-item">
+                                                <a class="nav-link" href="#">Link</a>
                                               </li>
-                                              <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reference</button>
+                                              <li class="nav-item">
+                                                <a class="nav-link" href="#">Link</a>
                                               </li>
                                           </ul>
-                                          <div class="tab-content" id="pills-tabContent">
-                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                            </div>
-                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                            </div>
-                                          </div>
                                     </div>
                                 </div>
                            </div>
@@ -374,12 +340,35 @@
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
                             text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
                         </div>
-                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
                             text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
                         </div>
                       </div>
-                      
                 </div>
               
             </div>

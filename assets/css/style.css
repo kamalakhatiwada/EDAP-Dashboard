@@ -262,9 +262,9 @@ position: fixed;
   padding-bottom: 40px;
 }
 
-.flex-column{
+/* .flex-column{
   margin-top: 70px;
-}
+} */
 
 .sign-out{
   margin-top: 40px;
@@ -286,10 +286,16 @@ position: fixed;
   padding-right: 1rem;
 }
 
+.sidebar .nav-link:hover {
+  background: #ffffff;
+  color: #37393d;
+}
+
 .sidebar .nav-link {
   font-weight: 500;
   color: var(--bs-dark);
 }
+
 .sidebar .nav-link:hover {
   color: var(--bs-primary);
 }
@@ -601,7 +607,18 @@ table.dataTable.no-footer {
   margin: 10px;
 }
 
+
+
+
+
+
+
 /* =================================================== PERMISSION =================================================== */
+
+
+
+
+
 
 
 .edap-permission-title{
@@ -628,9 +645,7 @@ table.dataTable.no-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
-
 
 .edap-permission-action-button{
   display: flex;
@@ -652,8 +667,6 @@ table.dataTable.no-footer {
 .edap-permission-search ::placeholder{
   margin-left: 20px;
 }
-
-
 
 .admin-button{
   padding-right: 20px;
@@ -678,6 +691,118 @@ table.dataTable.no-footer {
   border-radius: 8px;
   margin-right: 10px;
 }
+
+
+/* ====================== DOCUMENT============================== */
+
+.document-info-content{
+  background: #fff;
+  padding: 30px 30px;
+}
+
+#document-info-sidebar{
+  position: absolute; 
+  width: 174px;
+  overflow-y: scroll;
+  top: 401px;
+  bottom: -205px;
+}
+
+.document-info-item{
+  background: white;
+  box-shadow: 0 0 6px #ccc;
+}
+
+.document-info-item:hover{
+
+  background: #ffffff;
+  color: #37393d;
+}
+
+
+.scrollbar-horizontal{
+  position: absolute; 
+  width: 174px;
+  overflow-x: scroll;
+}
+
+.breadcrumb a{
+  text-decoration: none;
+}
+
+.document-info-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.document-info-header .btn-primary {
+  background-color: #03a9f4;
+  border-color: #03a9f4;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.document-info-header  h2{
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.nav-pills{
+  background: #E4F6FF;
+  width:268px;
+  border-radius: 8px;
+  padding: 3px;
+}
+
+.tab-content>.active {
+  display: block;
+  padding-top: 20px;
+}
+
+.nav-pills .nav-link.active {
+  color: #151515;
+  background-color: #ffffff;
+}
+
+.document-info-table caption{
+  caption-side: top;
+  font-weight: 500;
+}
+
+
+.document-info-table tr td{
+  border: 1px solid #ddd;
+}
+
+
+.document-info-tab{
+  padding-top: 30px;
+}
+
+
+.document-info-item a::after{
+  content: "/F035F";
+  display: inline-block;
+  position: absolute;
+  background: #cec7c7;
+  height: 28px;
+  padding: 1px;
+  width: 1px;
+  left: -3px;
+  bottom: 19px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
