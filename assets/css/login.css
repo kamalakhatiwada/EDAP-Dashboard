@@ -387,20 +387,21 @@ body {
       .w-100 {
         width: 100%!important;
       }
-  
-      .carousel-caption h5 {
-        font-size: 27px;
+
+      .carousel-caption{
+        bottom: 110px;
+      }
+      
+      .social-media ul li a img {
+        width: 15px !important;
       }
 
-      .carousel-caption p {
-        font-size: 16px;
-      }
     .carousel-control-prev {
       z-index: 99;
       opacity: 5.5;
       position: relative;
-      top: -79px;
-      left: 511px;
+      top: -113px;
+      left: 651px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -413,15 +414,15 @@ body {
       border: 2px solid #B9B9B9;
       border-radius: 50px;
       line-height: 30px;
-      padding: 8px;
+      padding: 15px;
     }
 
     .carousel-control-next {
       z-index: 99;
       opacity: 5.5;
       position: relative;
-      top: -130px;
-      left:  569px;
+      top: -181px;
+      left:  732px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -434,7 +435,7 @@ body {
       border: 2px solid #B9B9B9;
       border-radius: 50px;
       line-height: 30px;
-      padding: 8px;
+      padding: 14px;
   }
 
 
@@ -444,10 +445,10 @@ body {
       
       
       .carousel-caption h5{
-        font-size: 27px;
+        font-size: 34px;
       }
       
       .carousel-caption p{
-        font-size: 16px;
+        font-size: 18px;
       }
     }
