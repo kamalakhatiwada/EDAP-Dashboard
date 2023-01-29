@@ -293,7 +293,7 @@ body {
         top: -100px;
         left: 250px;
         justify-content: center;
-        width: 11%;
+        width: 10%;
         height: 0%;
         text-align: center;
         background: 0 0;
@@ -310,7 +310,7 @@ body {
       top: -143px;
       left: 300px;
       justify-content: center;
-      width: 11%;
+      width: 10%;
       height: 0%;
       text-align: center;
       background: 0 0;
@@ -347,7 +347,7 @@ body {
         opacity: 5.5;
         position: relative;
         top: -95px;
-        left: 317px;
+        left: 326px;
         justify-content: center;
         width: 9%;
         height: 0%;
@@ -357,14 +357,14 @@ body {
         border: 2px solid #B9B9B9;
         border-radius: 50px;
         line-height: 28px;
-        padding: 6px;
+        padding: 7px;
     }
       .carousel-control-next {
         z-index: 99;
         opacity: 5.5;
         position: relative;
-        top: -143px;
-        left: 377px;
+        top: -145px;
+        left: 380px;
         justify-content: center;
         width: 9%;
         height: 0%;
@@ -374,11 +374,8 @@ body {
         border: 2px solid #B9B9B9;
         border-radius: 50px;
         line-height: 28px;
-        padding: 6px;
+        padding: 7px;
     }
-
-
-
 
     }
 
@@ -391,7 +388,7 @@ body {
       .carousel-caption{
         bottom: 110px;
       }
-      
+
       .social-media ul li a img {
         width: 15px !important;
       }
@@ -436,6 +433,81 @@ body {
       border-radius: 50px;
       line-height: 30px;
       padding: 14px;
+  }
+
+
+      .w-100 {
+        width: 100%!important;
+      }
+      
+      
+      .carousel-caption h5{
+        font-size: 34px;
+      }
+      
+      .carousel-caption p{
+        font-size: 18px;
+      }
+    }
+
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+
+
+
+
+    @media screen and (min-width: 1400px) {
+      .w-100 {
+        width: 100%!important;
+      }
+
+      .carousel-caption{
+        bottom: 110px;
+      }
+
+      .social-media ul li a img {
+        width: 15px !important;
+      }
+
+    .carousel-control-prev {
+      z-index: 99;
+      opacity: 5.5;
+      position: relative;
+      top: -113px;
+      left: 405px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 8%;
+      height: 12%;
+      color: #fff;
+      text-align: center;
+      background: 0 0;
+      transition: opacity .15s ease;
+      border: 2px solid #B9B9B9;
+      border-radius: 50px;
+      line-height: 30px;
+      padding: 10px;
+    }
+
+    .carousel-control-next {
+      z-index: 99;
+      opacity: 5.5;
+      position: relative;
+      top: -170px;
+      left: 473px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 8%;
+      color: #FFE;
+      text-align: center;
+      background: 0 0;
+      transition: opacity .15s ease;
+      border: 2px solid #B9B9B9;
+      border-radius: 50px;
+      line-height: 30px;
+      padding: 10px;
   }
 
 
