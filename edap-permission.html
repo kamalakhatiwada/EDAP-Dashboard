@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Permission</title>
+
+     <!-- bootstrap css -->
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+     <!-- materials design icon -->
+     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+     <!-- themify icons -->
+     <link href="assets/css/themify-icons.css" rel="stylesheet">
+     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+     <!-- main css -->
+     <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+<section class="wrapper">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-md-2 ">
+                <div id="content">
+                    <nav class="sidebar card py-2" id="sidebar">
+                        <div class="sidebar-header">
+                            <div class="collapse-img">
+                                <a class="navbar-brand" href="#"> <img src="./img/Layer 2.png" alt=""> </a>
+                            </div>
+                           <div class="main-img">
+                                <a class="navbar-brand" href="#"> <img src="./img/logo.png" alt=""> </a>
+                           </div>
+                           
+                        </div>
+                        <ul class="nav flex-column" id="nav_accordion">
+                            <li class="nav-item dashboard">
+                                <a class="nav-link " href="#">  <img src="./img/darhboard.png" alt=""> Dashboard </a>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                
+                                <a class="nav-link" href="#">  <img src="./img/Group 9725.png" alt="">Setup <span class="dropdown-arrow-img"><img src="./img/Vector 9.png" alt="" class="arrow-right"> </span> </a>
+                                <ul class="submenu collapse">
+                                    <li><a class="nav-link" href="#">Submenu item 1 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 2 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                
+                                <a class="nav-link" href="#">   <img src="./img/Paper_light.png" alt=""> Document<span class="dropdown-arrow-img"><img src="./img/Vector 9.png" alt="" class="arrow-right"> </span> </a>
+                                <ul class="submenu collapse">
+                                    <li><a class="nav-link" href="#">Submenu item 4 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 5 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 6 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 7 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                
+                                <a class="nav-link" href="#">     <img src="./img/CPU_light.png" alt="">Equipment <span class="dropdown-arrow-img"><img src="./img/Vector 9.png" alt="" class="arrow-right"> </span></a>
+                                <ul class="submenu collapse">
+                                    <li><a class="nav-link" href="#">Submenu item 8 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 9 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 10 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 11 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">            
+                                
+                                <a class="nav-link" href="#"><img src="./img/Question.png" alt=""> Help </a>
+                            </li>
+                            
+                        </ul>
+                        <!-- <div class="sign-out">
+                            <a href="#"> <img src="./img/Sign_out_squre.png" alt=""> Sign Out </a>
+                        </div> -->
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="top-menubar">
+                    <div class="edap-menubar">
+                        <div class="toggle-menu">
+                            <button type="button" id="sidebarCollapse" class="btn btn-default">
+                                <i class="lni lni-menu"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="nav navbar-nav ml-auto">
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                        <i class="lni lni-search-alt"></i>
+                                    </form>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="lni lni-alarm"></i>
+                                            <span class="notification"></span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">Someone liked your picture</a>
+                                            <a class="dropdown-item" href="#">New Comments</a>
+                                            <a class="dropdown-item" href="#">Sitaladdednew picture</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <div class="edap-profile">
+                                            <div class="client-name">
+                                                <h3>Courtney Henry</h3>
+                                                <span class="post">Welcome Back</span>
+                                              </div>
+                                              <div class="edap-profile-image">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                   <span class="user-image">
+                                                        <img src="./img/user-img.jpg" alt="">
+                                                   </span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="#">Edit your profile</a>
+                                                    <a class="dropdown-item" href="#">Change password</a>
+                                                    <a class="dropdown-item" href="#">Logout</a>
+                                                </div>
+                                              </div>
+                                        </div>
+                                     
+                                       
+                                        
+                                    </li>
+                                </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="edap-users-content-header">
+                    <h2>Permission</h2>
+                    <p>Manage the permissions of users.</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Setup</a></li>
+                          <li class="breadcrumb-item"><a href="#">Roles</a></li>
+                          <li class="breadcrumb-item active" aria-current="page"> Manage Permissions</li>
+                        </ol>
+                      </nav>
+                </div>
+                <div class="border-bottom"></div>
+                <div class="edap-permission-title">
+                    <div>
+                        <h3>Manage Permission</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="edap-permission">
+                        <div class="edap-permission-action-button">
+                            <div class="admin-button">
+                                <a href="#" class="btn btn-warning">Admin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="edap-permission-setup">
+                    <h3>
+                        Setup
+                    </h3>
+                    <div class="bg-white">
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Users
+                                    </label>
+                                    <p> Lorem ipsum dolor sit amt, consectetur.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Users</label>
+                                    <p> If you switch on to this you can view all the users in the list
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Force Password Change</label>
+                                    <p> You can change the password as you want.
+                                    </p>
+                                  </div>
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                    <label class="form-check-label" for="flexSwitchCheckChecked">Edit User</label>
+                                    <p> View all the users in the list.
+                                    </p>
+                                  </div>
+                            </div>
+                        </div>
+    
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Area
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Area Group</label>
+                                    <p> If you switch on to this you can view all the users.
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Area Code</label>
+                                    <p> You can change the password.
+                                    </p>
+                                  </div>
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                            </div>
+                        </div>
+    
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Documents
+                                    </label>
+                                    <p> Lorem ipsum dolor sit amt, consectetur.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Pictures</label>
+                                    <p> If you switch on to this you can view all the users in the list
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Tables</label>
+                                    <p>You can change the password.
+                                    </p>
+                                  </div>
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                    <label class="form-check-label" for="flexSwitchCheckChecked">View Manage Document Group</label>
+                                    <p> You can change the password.
+                                    </p>
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Notes</label>
+                                    <p> If you switch on to this you can <br />
+                                        view all the users in the list
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Document Types</label>
+                                   
+                                  </div>
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                    <label class="form-check-label" for="flexSwitchCheckChecked">View Manage Document Access</label>
+                               
+                                  </div>
+                            </div>
+                        </div>
+                        
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Unit of Measure
+                                    </label>
+                                    <p> Lorem ipsum dolor sit amt, consectetur.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Unit of Measure</label>
+                                    <p> If you switch on to this you can view all the users in the list
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                              
+                            </div>
+                        </div>
+
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Risk Type
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Risk Type</label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                              
+                            </div>
+                        </div>
+
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Risk Type
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Risk Type</label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                              
+                            </div>
+                        </div>
+
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Risk Type
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Risk Type</label>
+                                    <p>If you switch on to this you can view all the users.
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                              
+                            </div>
+                        </div>
+
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Access Rating Type
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Access Rating Type</label>
+                                    <p>If you switch on to this you can view all the users.
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                              
+                            </div>
+                        </div>
+
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Failure Modes
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Failure Modes</label>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                              
+                            </div>
+                        </div>
+
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Criticality
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Criticality</label>
+                               
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                              
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Hazard Category
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Hazard Category</label>
+                                    <p>If you switch on to this you can view all the users.
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                              
+                            </div>
+                        </div>
+
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Probability
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">
+                                        View Manage Probability
+                                    </label>
+                                    <p>If you switch on to this you can view all the users.
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                              
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Severity
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">
+                                        View Manage Severity
+                                    </label>
+                                    <p>If you switch on to this you can view all the users.
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                              
+                            </div>
+                        </div>
+
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Menu
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Change Status Menu</label>
+                                    <p>If you switch on to this you can view all the users.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Status Sub Menu</label>
+                                    <p>If you switch on to this you can view all the users.
+                                    </p>
+                                </div>
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Change Status Parent Sub Menu</label>
+                                    <p>If you switch on to this you can view all the users.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Change Status Parent  Menu</label>
+                                    <p>If you switch on to this you can view all the users.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Parent Menu</label>
+                                    <p>If you switch on to this you can view all the users.
+                                    </p>
+                                </div>
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View  Menu</label>
+                                    <p>If you switch on to this you can view all the users.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Role
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Change Status Role</label>
+                                    <p>If you switch on to this you can view all the users.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Edit Company</label>
+                                    <p>If you switch on to this you can view all the users.
+                                    </p>
+                                </div>
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Role</label>
+                                    <p>If you switch on to this you can view all the users.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="edap-permission-setup">
+                    <h3>
+                        Document
+                    </h3>
+                    <div class="bg-white">
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Manage Template
+                                    </label>
+                                    <p> Lorem ipsum dolor sit amt, consectetur.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Template Content</label>
+                                    <p> If you switch on to this you can view all the users in the list
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View New Template</label>
+                                    <p> You can change the password as you want.
+                                    </p>
+                                  </div>
+                             
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                            </div>
+                        </div>
+    
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Manage Document
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View New Document</label>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edap-permission-setup">
+                    <h3>
+                        Document
+                    </h3>
+                    <div class="bg-white">
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Asset
+                                    </label>
+                                    <p> Lorem ipsum dolor sit amt, consectetur.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Asset Type</label>
+                                    <p> If you switch on to this you can view all the users in the list
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                        
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                            </div>
+                        </div>
+    
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Equipment
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Equipment</label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Equipment Types</label>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Equipment Function</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Failure Analysis
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Failure Analysis</label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                            </div>
+                            <div class="edap-permission-option-box">
+                                
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+    
+                        <div class="edap-permission-setup-options">
+                            <div class="edap-permission-option-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Questionnaire
+                                    </label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">View Manage Questionnaire</label>
+                                    <p> Lorem ipsum dolor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edap-permission-option-box">
+                                
+                            </div>
+                            <div class="edap-permission-option-box">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-equipment-form-buttons">
+                        <div></div>
+                        <div class="add-equipment-form-buttons-right">
+                            <div>
+                                <a href="" class="btn btn-light"> Cancel</a>
+                            </div>
+                           
+                            <div>
+                                <a href="" class="btn btn-secondary">Save Changes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+  <!-- script -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="DataTables/datatables.min.js"></script>
+<!-- custom js -->
+<script src="assets/js/scripts.js"></script>
+
+
+</body>
+
+</html>
