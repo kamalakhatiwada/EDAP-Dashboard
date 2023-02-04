@@ -1043,8 +1043,46 @@ h4{
 
 
 .tab-content-table{
-  border: 1px solid #ddd;
+   border: 1px solid #ddd;
   border-radius: 8px;
+}
+
+.tab-content-form-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #D8F2FF;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 12px;
+  /* border: 1px solid #ddd;
+    border-top-left-radius: 8px;
+     border-bottom-left-radius: 8px; */
+}
+
+.tab-content-form-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.tab-content-form-header .btn-light {
+  background: #3AB4F2;
+  float: right;
+  padding: 10px 17px;
+}
+
+.tab-content-table .form-control {
+  background: #d8f2ff;
+  border: 1px solid transparent;
+  padding: 25px 10px;
+  margin-left: 10px;
+  width: 450px;
+}
+
+.tab-content-form-list-border-bottom{
+  border-bottom: 1px solid #ddd;
 }
 
 
@@ -1056,12 +1094,12 @@ h4{
 }
 
 
-
 .document-info-buttons .btn-light{
   background: #fff;
   border: 1px solid #ddd;
   padding: 10px 40px;
   border-radius: 8px;
+  margin-right: 20px;
 }
 
 
@@ -1082,12 +1120,6 @@ h4{
 }
 
 
-.tab-content-table td {
-  padding: 10px;
-}
-
-
-
 .tab-content-table .input-group {
   position: relative;
   display: flex;
@@ -1099,11 +1131,6 @@ h4{
   background: aliceblue;
 }
 
-.tab-content-table  .form-control {
-  background-color: transparent;
-  border:1px solid transparent;
-  padding-left: 10px;
-}
 
 .input-group-lg>.input-group-text {
   padding: 0.5rem 1rem;
@@ -1115,19 +1142,17 @@ h4{
 }
 .trash{
   float: right;
-    padding-right: 20px;
+  padding-right: 20px;
+  padding-top: 24px;
 }
 
 
 
 
-
-
-
-
-
-
 /* =========================NOTES================= */
+
+
+
 .notes-table {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -1380,7 +1405,7 @@ h4{
 /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
     
-@media screen and (max-width: 780px) {
+/* 
     .sidebar {
         display: none;
     }
@@ -1460,8 +1485,8 @@ h4{
 
     .active {
         display: block;
-    }
-}
+    } */
+
   }
 
 /* Large devices (laptops/desktops, 992px and up) */
