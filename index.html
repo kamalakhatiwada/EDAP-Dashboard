@@ -32,9 +32,69 @@
 <body>
 <section class="wrapper">
     <div class="container-fluid p-0">
-        <div class="row g-0">
+        <div class="row">
             <div class="col-md-2 ">
-                <div id="content">
+                <div class="mobile-view">
+                    <nav class="sidebar card py-2" id="sidebar">
+                        <div class="sidebar-header">
+                            <div class="collapse-img">
+                                <a class="navbar-brand" href="#"> <img src="./img/Layer 2.png" alt=""> </a>
+                            </div>
+                           <div class="main-img">
+                                <a class="navbar-brand" href="#"> <img src="./img/logo.png" alt=""> </a>
+                           </div>
+                           
+                        </div>
+                        <ul class="nav flex-column" id="nav_accordion">
+                            <li class="nav-item dashboard">
+                                <a class="nav-link " href="#">  <img src="./img/darhboard.png" alt=""> Dashboard </a>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <a class="nav-link" href="#">  <img src="./img/Group 9725.png" alt="">Setup <span class="dropdown-arrow-img"><img src="./img/Vector 9.png" alt="" class="arrow-right"> </span> </a>
+                                <ul class="submenu collapse">
+                                    <li><a class="nav-link" href="#">Submenu item 1 </a>
+                                        <ul class="submenu collapse">
+                                            <li><a class="nav-link" href="#">Submenu item 1 </a></li>
+                                            <li><a class="nav-link" href="#">Submenu item 2 </a></li>
+                                            <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link" href="#">Submenu item 2 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                
+                                <a class="nav-link" href="#">   <img src="./img/Paper_light.png" alt=""> Document<span class="dropdown-arrow-img"><img src="./img/Vector 9.png" alt="" class="arrow-right"> </span> </a>
+                                <ul class="submenu collapse">
+                                    <li><a class="nav-link" href="#">Submenu item 4 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 5 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 6 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 7 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                
+                                <a class="nav-link" href="#">     <img src="./img/CPU_light.png" alt="">Equipment <span class="dropdown-arrow-img"><img src="./img/Vector 9.png" alt="" class="arrow-right"> </span></a>
+                                <ul class="submenu collapse">
+                                    <li><a class="nav-link" href="#">Submenu item 8 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 9 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 10 </a></li>
+                                    <li><a class="nav-link" href="#">Submenu item 11 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">            
+                                
+                                <a class="nav-link" href="#"><img src="./img/Question.png" alt=""> Help </a>
+                            </li>
+                            
+                        </ul>
+                        <!-- <div class="sign-out">
+                            <a href="#"> <img src="./img/Sign_out_squre.png" alt=""> Sign Out </a>
+                        </div> -->
+                    </nav>
+                </div>
+                <div class="desktop-view">
                     <nav class="sidebar card py-2" id="sidebar">
                         <div class="sidebar-header">
                             <div class="collapse-img">
@@ -98,55 +158,69 @@
             <div class="col-md-10">
                 <div class="top-menubar">
                     <div class="edap-menubar">
-                        <div class="toggle-menu">
-                            <button type="button" id="sidebarCollapse" class="btn btn-default">
-                                <i class="lni lni-menu"></i>
-                            </button>
+                    <div class="mobile-view">
+                            <div class="toggle-menu">
+                                <button type="button" id="sidebarCollapse" class="btn btn-default">
+                                    <i class="lni lni-menu"></i>
+                                Menu
+                                </button> 
+                            </div>
+                    </div>
+                        <div class="desktop-view">
+                            <div class="toggle-menu">
+                                <button type="button" id="sidebarCollapse" class="btn btn-default">
+                                    <i class="lni lni-menu"></i>
+                                  Menu
+                                </button> 
+                            </div>
                         </div>
+                   
                         <div>
                             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="nav navbar-nav ml-auto">
-                                    <form class="d-flex" role="search">
-                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                        <i class="lni lni-search-alt"></i>
-                                    </form>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <!-- <i class="ti ti-bell"></i> -->
-                                            <i class="lni lni-alarm"></i>
-                                            <span class="notification"></span>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">Someone liked your picture</a>
-                                            <a class="dropdown-item" href="#">New Comments</a>
-                                            <a class="dropdown-item" href="#">Sitaladdednew picture</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <div class="edap-profile">
-                                            <div class="client-name">
-                                                <h3>Courtney Henry</h3>
-                                                <span class="post">Welcome Back</span>
-                                              </div>
-                                              <div class="edap-profile-image">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                   <span class="user-image">
-                                                        <img src="./img/user-img.jpg" alt="">
-                                                   </span>
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                                    <a class="dropdown-item" href="#">Edit your profile</a>
-                                                    <a class="dropdown-item" href="#">Change password</a>
-                                                    <a class="dropdown-item" href="#">Logout</a>
+                                    <ul class="nav navbar-nav ml-auto">
+                                        <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                            <i class="lni lni-search-alt"></i>
+                                        </form>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="lni lni-alarm"></i>
+                                                <span class="notification"></span>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">Someone liked your picture</a>
+                                                <a class="dropdown-item" href="#">New Comments</a>
+                                                <a class="dropdown-item" href="#">Sitaladdednew picture</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <div class="edap-profile">
+                                                <div class="client-name">
+                                                    <h3>Courtney Henry</h3>
+                                                    <span class="post">Welcome Back</span>
                                                 </div>
-                                              </div>
-                                        </div>
-                                     
-                                       
+                                                <div class="edap-profile-image">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="user-image">
+                                                            <img src="./img/user-img.jpg" alt="">
+                                                    </span>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                                        <a class="dropdown-item" href="#">Edit your profile</a>
+                                                        <a class="dropdown-item" href="#">Change password</a>
+                                                        <a class="dropdown-item" href="#">Logout</a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         
-                                    </li>
-                                </ul>
+                                        
+                                            
+                                        </li>
+                                    </ul>
                                 </div>
                             </nav>
                         </div>
