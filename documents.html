@@ -104,10 +104,10 @@
                             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="nav navbar-nav ml-auto">
-                                    <form class="d-flex" role="search">
+                                    <!-- <form class="d-flex" role="search">
                                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                                         <i class="lni lni-search-alt"></i>
-                                    </form>
+                                    </form> -->
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <!-- <i class="ti ti-bell"></i> -->
@@ -569,8 +569,6 @@
                                                                                             <div class="tab-content" id="myTabContent">
                                                                                                 <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
 
-
-
                                                                                                 </div>
                                                                                                 <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                                                                                                     <div class="mb-3">
@@ -604,7 +602,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div>
+                                                                        <div class="mt-2">
                                                                             <select class="form-select" aria-label="Default select example">
                                                                                 <option selected>Select picture</option>
                                                                                 <option value="1">One</option>
@@ -617,7 +615,7 @@
                                                                 </td>
                                                                 <td style="border-bottom: 1px solid #ddd;"> 
                                                                     <div class="pictures-dropdown">
-                                                                        <div>
+                                                                        <div class="ms-2">
                                                                             <!-- Button trigger modal -->
                                                                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                                                 <i class="lni lni-image"></i>
@@ -628,11 +626,104 @@
                                                                                 <div class="modal-dialog modal-dialog-centered">
                                                                                     <div class="modal-content">
                                                                                         <div class="modal-header">
-                                                                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Add Folder</h1>
+                                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                                         </div>
                                                                                         <div class="modal-body">
-                                                                                        ...
+                                                                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                                                                <li class="nav-item" role="presentation">
+                                                                                                  <button class="nav-link active" id="search-task-tab" data-bs-toggle="tab" data-bs-target="#search-task-tab-pane" type="button" role="tab" aria-controls="search-task-tab-pane" aria-selected="true">Search Task</button>
+                                                                                                </li>
+                                                                                                <li class="nav-item" role="presentation">
+                                                                                                  <button class="nav-link" id="new-task-tab" data-bs-toggle="tab" data-bs-target="#new-task-pane" type="button" role="tab" aria-controls="new-task-tab-pane" aria-selected="false">New Task</button>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                            <div class="tab-content" id="myTabContent">
+                                                                                                <div class="tab-pane fade show active" id="search-task-tab-pane" role="tabpanel" aria-labelledby="search-task-tab" tabindex="0">
+                                                                                                    ....
+                                                                                                </div>
+                                                                                                <div class="tab-pane fade" id="new-task-tab-pane" role="tabpanel" aria-labelledby="new-task-tab" tabindex="0">
+                                                                                                    <!-- <div class="mb-3">
+                                                                                                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                                                                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                                                                                      </div>
+                                                                                                      <select class="form-select" aria-label="Default select example">
+                                                                                                        <option selected>Enter folder name</option>
+                                                                                                        <option value="1">One</option>
+                                                                                                        <option value="2">Two</option>
+                                                                                                        <option value="3">Three</option>
+                                                                                                    </select> -->
+
+                                                                                                    <form class="row g-3">
+                                                                                                        <div class="col-md-6">
+                                                                                                          <label for="inputEmail4" class="form-label">Email</label>
+                                                                                                          <input type="email" class="form-control" id="inputEmail4">
+                                                                                                        </div>
+                                                                                                        <div class="col-md-3">
+                                                                                                            <select class="form-select" aria-label="Default select example">
+                                                                                                                <option selected>Enter folder name</option>
+                                                                                                                <option value="1">One</option>
+                                                                                                                <option value="2">Two</option>
+                                                                                                                <option value="3">Three</option>
+                                                                                                            </select> 
+                                                                                                        </div>
+                                                                                                        <div class="col-3">
+                                                                                                            <select class="form-select" aria-label="Default select example">
+                                                                                                                <option selected>Enter folder name</option>
+                                                                                                                <option value="1">One</option>
+                                                                                                                <option value="2">Two</option>
+                                                                                                                <option value="3">Three</option>
+                                                                                                            </select> 
+                                                                                                        </div>
+
+                                                                                                        <div class="col-3">
+                                                                                                            <select class="form-select" aria-label="Default select example">
+                                                                                                                <option selected>Enter folder name</option>
+                                                                                                                <option value="1">One</option>
+                                                                                                                <option value="2">Two</option>
+                                                                                                                <option value="3">Three</option>
+                                                                                                            </select> 
+                                                                                                        </div>
+                                                                                                        <div class="col-md-3">
+                                                                                                            <select class="form-select" aria-label="Default select example">
+                                                                                                                <option selected>Enter folder name</option>
+                                                                                                                <option value="1">One</option>
+                                                                                                                <option value="2">Two</option>
+                                                                                                                <option value="3">Three</option>
+                                                                                                            </select> 
+                                                                                                        </div>
+                                                                                                        <div class="col-md-4">
+                                                                                                          <label for="inputState" class="form-label">State</label>
+                                                                                                          <select id="inputState" class="form-select">
+                                                                                                            <option selected>Choose...</option>
+                                                                                                            <option>...</option>
+                                                                                                          </select>
+                                                                                                        </div>
+
+                                                                                                        
+                                                                                                        <div class="col-md-6">
+                                                                                                            <label for="inputEmail4" class="form-label">Resource</label>
+                                                                                                            <input type="email" class="form-control" id="inputEmail4" placeholder="Enter resource">
+                                                                                                        </div>
+                                                                                                        <div class="col-md-6">
+                                                                                                            <label for="inputEmail4" class="form-label">No. of People</label>
+                                                                                                            <input type="email" class="form-control" id="inputEmail4">
+                                                                                                        </div>
+                                                                                                      
+                                                                                                      </form>
+                                                                                                  
+
+
+
+
+
+
+
+
+
+
+                                                                                                </div>
+                                                                                            </div>
                                                                                         </div>
                                                                                         <div class="modal-footer">
                                                                                             <div class="document-info-buttons">
@@ -653,7 +744,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div>
-                                                                            <input class="form-control form-control-lg" type="text" placeholder="Add new equipment" aria-label=".form-control-lg example">
+                                                                            <input class="form-control form-control-lg" id="formFileLg" type="file">
                                                                         </div>
                                                                     </div>
                                                                    

@@ -201,7 +201,7 @@ a {
 
 
 
-
+/* 
 
 .wrapper .bg-light {
   background-color: transparent !important;
@@ -255,7 +255,7 @@ a {
 
 /* .wrapper #content {
 position: fixed;
-} */
+} 
 
 
 .wrapper #sidebar .sidebar-header img {
@@ -308,7 +308,7 @@ position: fixed;
   padding-bottom: 40px;
 }
 
-/* 
+
 .sign-out{
   margin-top: 40px;
 }
@@ -318,7 +318,7 @@ position: fixed;
   text-decoration: none;
   padding-left: 20px;
 }
- */
+
 
 
 .sidebar li .submenu{ 
@@ -428,7 +428,7 @@ position: fixed;
 
 .mobile-view{
   display: none;
-}
+} */
 
 
 
@@ -1419,7 +1419,9 @@ h4{
   height: 53px;
   line-height: 39px;
   margin-left: 10px;
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000;
 }
 
 .pictures-table .btn-light {
@@ -1428,17 +1430,17 @@ h4{
   padding: 7px 7px !important;
 }
 
-.pictures-table .form-select {
+.pictures-table .pictures-dropdown .form-select {
   --bs-form-select-bg-img: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
   display: block;
-  width: 100%;
+  width:150%;
   padding: 15px 20px;
   -moz-padding-start: calc(0.75rem - 3px);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--bs-body-color);
-  background-color: #EAF8FF;
+  background: #d8f2ff;
   background-image: var(--bs-form-select-bg-img),var(--bs-form-select-bg-icon,none);
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -1452,6 +1454,60 @@ h4{
   margin-left: 10px;
   margin-top: 0;
 }
+
+.modal-body .form-select {
+  width: 98% !important;
+}
+
+
+
+.modal-body .nav-tabs .nav-link {
+  font-size: 16px;
+  color: #928C8A;
+  font-weight: 500;
+}
+
+.modal-body .form-label {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+
+.pictures-table .modal-footer .btn-light{
+  background: #fff !important;
+  border: 1px solid #ddd !important;
+  padding: 13px 40px !important;
+  border-radius: 8px;
+  margin-right: 13px;
+
+}
+
+.modal-footer .add-equipment-form-buttons .btn-secondary {
+  background: #3AB4F2;
+  border: 1px solid #3AB4F2;
+  padding: 13px 40px;
+  border-radius: 8px;
+}
+
+.pictures-dropdown .btn-primary{
+  background: #d8f2ff !important;
+  border: 1px solid #d8f2ff !important;
+  padding: 14px 20px;
+  border-radius: 54px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+
+.pictures-dropdown .btn-primary .lni-image{
+  color: #F2783A;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
+
+
 
 /* tables */
 
