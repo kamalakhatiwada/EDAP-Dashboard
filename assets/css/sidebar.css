@@ -304,6 +304,7 @@
     transform: translateY(-50%); 
   }
   
+
   
   
   .sidebar  .active{
@@ -312,6 +313,10 @@
     border-left: 8px solid #3AB4F2;
   }
   
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+    }
 
   .sidebar .nav-link:hover {
     color: #5C5451;
