@@ -274,6 +274,7 @@
     font-weight: 500;
     color: var(--bs-dark);
     padding: 20px 10px;
+    position: relative;
 }
   
   .sidebar .nav-link:hover {

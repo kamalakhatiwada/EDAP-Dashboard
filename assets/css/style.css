@@ -48,7 +48,10 @@ a {
 
 
 
-/* ============================================================USERS===================================================== */
+
+
+
+/* ============================================================SETUP USERS===================================================== */
 
 
 
@@ -74,8 +77,9 @@ a {
   border-color: #03a9f4;
   padding: 8px 10px;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 26px;
 }
 
 .edap-users-action-button{
@@ -84,11 +88,12 @@ a {
   justify-content: space-between;
 }
 
-.lni-plus{
+.edap-users-action-button .lni-plus{
   font-size: 12px;
   top: 1px;
   position: relative;
-  padding-right: 10px;
+  line-height: 20px;
+  padding: 0 !important;
 }
 
 .edap-users-filter{
@@ -98,19 +103,7 @@ a {
   padding: 8px 10px;
   margin-right: 22px;
 }
-.edap-users-filter .lni{
-  margin-top: 7px;
-}
-.edap-users-reload{
-  border: 1px solid #C1BBB9;
-  border-radius: 8px;
-  height: 42px;
-  padding: 8px 10px;
-  margin-right: 22px;
-}
-.edap-users-reload .lni{
-  margin-top: 7px;
-}
+
 .edap-users-content-header{
   padding-top: 20px;
   padding-bottom: 30px;
@@ -128,12 +121,7 @@ a {
 
 
 
-
-
-
-/* --------------------------USER DATA TABLE ----------------------------------------*/
-
-
+/*-------------------------- DATA TABLES--------------------------- */
 
 
 
@@ -143,7 +131,8 @@ a {
 .user-table{
   background: #fff;
   margin-right: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 75px;
+  margin-top: 18px;
   box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
     border-radius: 8px;
 }
@@ -230,34 +219,42 @@ a {
 
 
 
-
-
-
-
-
-/*-------------------------- DATA TABLES--------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
 #example_filter{
-  display: none;
+  display: block;
+  float: right;
+  position: absolute;
+  top: -79px;
+  right: 144px;
 } 
+
+.user-table select {
+  word-wrap: normal;
+  border: 1px solid #C1BBB9;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+
+.user-table label{
+  font-size: 18px;
+}
+
+
 
 .dataTables_wrapper .dataTables_length {
   float: left;
   position: absolute;
-  top: -54px;
+  top: -79px;
 }
+
+.dataTables_wrapper .dataTables_filter input {
+  margin-left: 0.5em;
+  height: 42px;
+  border-radius: 8px;
+  border: 1px solid #C1BBB9;
+}
+
+
 table.dataTable thead .sorting{
   background-image: none;
 }
@@ -272,8 +269,6 @@ table.dataTable thead .sorting_dec {
 
 thead th{
   background: #D8F2FF;
-  /* border-top-right-radius: 8px;
-  border-top-left-radius: 8px; */
 }
 
 table.dataTable thead th {
@@ -322,7 +317,13 @@ table.dataTable.no-footer {
   margin: 10px;
 }
 
-
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+  cursor: default;
+  color: #666 !important;
+  border: 1px solid #C1BBB9;
+  background: transparent;
+  box-shadow: none;
+}
 
 
 
@@ -418,7 +419,15 @@ table.dataTable.no-footer {
   font-weight: 600;
 }
 
+.form-check .form-check-input[type=checkbox] {
+  border-radius: 15px;
+  padding: 10px;
+  margin-right: 10px;
+}
 
+.form-check .form-switch .form-check-input {
+  width: 34px;
+}
 
 
 
@@ -854,13 +863,13 @@ h4{
 
 
 
-.form-select:focus {
+.add-equipment-form .form-select:focus {
   border-color: #55679D;
   outline: 0;
   box-shadow: 0 0 0 0.25rem #55679D;
 }
 
-.form-check-input:checked {
+.add-equipment-form .form-check-input:checked {
   background: #fff;
   border:1px solid #36d152;
 }
@@ -869,7 +878,7 @@ h4{
   border-radius: 8px;
 }
 
-.form-check-input:focus {
+.add-equipment-form .form-check-input:focus {
   box-shadow: 0 0 0 0.25rem #36d152;
 }
 
