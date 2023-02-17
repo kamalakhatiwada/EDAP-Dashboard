@@ -132,13 +132,13 @@ a {
   background: #fff;
   margin-right: 40px;
   margin-bottom: 75px;
-  margin-top: 18px;
-  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .user-table table{
   width: 100%;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  margin-top: 18px;
 }
 
 
@@ -219,13 +219,9 @@ a {
 
 
 
-#example_filter{
-  display: block;
-  float: right;
-  position: absolute;
-  top: -79px;
-  right: 144px;
-} 
+ #example_filter{
+  margin-bottom: 20px;
+}  
 
 .user-table select {
   word-wrap: normal;
@@ -242,10 +238,8 @@ a {
 
 
 .dataTables_wrapper .dataTables_length {
-  float: left;
-  position: absolute;
-  top: -79px;
-}
+  margin-bottom: 20px;
+} 
 
 .dataTables_wrapper .dataTables_filter input {
   margin-left: 0.5em;
@@ -325,6 +319,19 @@ table.dataTable.no-footer {
   box-shadow: none;
 }
 
+.user-table .dropdown-toggle {
+  white-space: nowrap;
+  border: none;
+  background: transparent;
+}
+
+.user-table   .dropdown-toggle::after {
+  display: none !important;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
 
 
 
@@ -341,7 +348,7 @@ table.dataTable.no-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 10px;
+  padding-top:30px;
   padding-right: 42px;
   padding-left: 30px;
 }
@@ -393,6 +400,16 @@ table.dataTable.no-footer {
   padding-right: 20px;
   padding-top: 12px;
 }
+
+
+.admin-button .btn-warning {
+  padding: 10px 40px;
+  border-radius: 36px;
+  color: #fff;
+}
+
+
+
 .edap-permission-setup{
   padding-top: 10px;
   padding-right: 42px;
@@ -419,15 +436,28 @@ table.dataTable.no-footer {
   font-weight: 600;
 }
 
-.form-check .form-check-input[type=checkbox] {
+
+.edap-permission-option-box .form-check  .form-switch .form-check-input {
+  width: 34px;
   border-radius: 15px;
   padding: 10px;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
-.form-check .form-switch .form-check-input {
-  width: 34px;
+
+.edap-permission-option-box  .form-check  .form-check-input[type=checkbox] {
+  border-radius: 8px !important;
+  padding: 10px !important;
+  margin-right: 8px;
+} 
+
+
+.edap-permission-option-box .form-check p{
+  padding-left: 10px;
 }
+
+
+
 
 
 
@@ -450,12 +480,12 @@ table.dataTable.no-footer {
 
 #document-info-sidebar{
   position: sticky;
-  width: 174px;
+  width: 330px;
   overflow-y: scroll;
   top: 75px;
   bottom: -73px;
   border: none;
-  height: 382px;
+  height: 560px;
 }
 
 .document-info-item a{
@@ -477,6 +507,12 @@ table.dataTable.no-footer {
   border-radius: 8px;
 }
 
+.document-info-sidebar-block .modal-backdrop {
+  position: relative !important;
+  top: 0;
+  left: 0;
+  z-index: var(--bs-backdrop-zindex);
+}
 
 .scrollbar-horizontal{
   position: absolute; 
@@ -487,6 +523,14 @@ table.dataTable.no-footer {
 .breadcrumb a{
   text-decoration: none;
 }
+
+.document-info-content .offcanvas.offcanvas-end {
+  top: 0;
+  right: 0;
+  width: 700px;
+  border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+}
+
 
 .document-info-header{
   display: flex;
@@ -521,6 +565,7 @@ table.dataTable.no-footer {
 ::-webkit-scrollbar-thumb:horizontal {
   height: 10px;
 }
+
 
 
 .document-info-header .btn-primary {
@@ -763,9 +808,12 @@ h4{
   font-size: 15px;
   border-radius: 0.5rem;
 }
+
 .tab-content-table  .input-group-text {
   background-color: transparent;
 }
+
+
 .trash{
   float: right;
   padding-right: 20px;
@@ -1214,52 +1262,45 @@ h4{
 
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
-    .mobile-view{
-      display: block;
-    }
-    .desktop-view{
-      display: none;
+
+    /* PERMISSON PAGE RESPONSIVE DESIGN */
+
+   .edap-permission-setup .edap-permission-setup-options{
+      display: flex;
+      flex-direction: column;
     }
 
   }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
-    .mobile-view{
-      display: block;
-    }
-    .desktop-view{
-      display: none;
+    .edap-permission-setup .edap-permission-setup-options{
+      display: flex;
+      flex-direction: column;
     }
   }
 
 /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    .mobile-view{
-      display: block;
-    }
-    .desktop-view{
-      display: none;
+    .edap-permission-setup .edap-permission-setup-options{
+      display: flex;
+      flex-direction: column;
     }
   }
 
 /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    .mobile-view{
-      display: none;
-    }
-    .desktop-view{
-      display: block;
+    .edap-permission-setup .edap-permission-setup-options{
+      display: flex;
+      flex-direction: row;
     }
   }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
-    .mobile-view{
-      display: none;
-    }
-    .desktop-view{
-      display: block;
+    .edap-permission-setup .edap-permission-setup-options{
+      display: flex;
+      flex-direction: row;
     }
   }
   
