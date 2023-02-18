@@ -167,7 +167,7 @@ a {
   background: #33b43838;
   border-radius: 22px;
   padding: 5px 18px;
-  font-size: 10px;
+  font-size: 14px;
   color: #33B438;
   position: absolute;
   margin-top: 5px;
@@ -178,7 +178,7 @@ a {
   background: #33B438;
   border-radius: 55px;
   padding: 2px;
-  bottom:9px;
+  bottom:12px;
   position: absolute;
   left: 7px;
   width: 0%;
@@ -188,11 +188,11 @@ a {
   background: #e2130024;
   border-radius: 22px;
   padding: 5px 18px;
-  font-size: 10px;
+  font-size: 14px;
   color: #f20d0d;
   position: relative;
   margin-top: 5px;
-  width: 66px;
+  width:84px;
 }
 
 .user-table .inactive-dot {
@@ -200,7 +200,7 @@ a {
   background: #ff0000;
   border-radius: 55px;
   padding: 2px;
-  bottom: 9px;
+  bottom: 12px;
   position: absolute;
   left: 7px;
   width: 0%;
@@ -455,6 +455,63 @@ table.dataTable.no-footer {
 .edap-permission-option-box .form-check p{
   padding-left: 10px;
 }
+
+
+/* ================================================= EQUIPMENT MANAGEMENT ======================================================================== */
+
+.edap-equipment-management-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.edap-equipment-management-buttons .btn-warning {
+  padding: 10px 40px;
+  border-radius: 8px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.edap-equipment-management-buttons  .lni-upload{
+  padding-right: 10px;
+}
+
+
+.equipment-management  img {
+  width: 17px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 6px;
+}
+
+
+.equipment-management .yellow{
+  border: 1px solid #F2DF3A;
+  background: #fff38954;
+  border-radius: 22px;
+  padding: 5px 18px;
+  font-size: 14px;
+  color: #F2DF3A;
+  position: absolute;
+  margin-top: 5px;
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1132,6 +1189,9 @@ h4{
   width: 98% !important;
 }
 
+.modal-body img{
+  width: 100%;
+}
 
 
 .modal-body .nav-tabs .nav-link {

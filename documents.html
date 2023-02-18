@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/sidebar.css">
 
-
+    <link rel="stylesheet" href="dist/themes/default/style.min.css" />
 </head>
 
 <body>
@@ -197,253 +197,41 @@
                                     <div class="document-info-sidebar-block">
                                         <div class="scrollbar-horizontal" id="document-info-sidebar">
                                             <div class="flex-column">
-                                                 <div class="ms-1">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdropOne">
-                                                        <i class="lni lni-folder"></i>  Folder-1
-                                                    </button>
-                                                    
-                                                    <!-- Modal -->
-                                                    <div class="modal fade" id="staticBackdropOne" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabeOne" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered modal-xl">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Add Folder</h1>
-                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                                                        <li class="nav-item" role="presentation">
-                                                                          <button class="nav-link active" id="search-task-tab" data-bs-toggle="tab" data-bs-target="#search-task-tab-pane" type="button" role="tab" aria-controls="search-task-tab-pane" aria-selected="true">Search Task</button>
-                                                                        </li>
-                                                                        <li class="nav-item" role="presentation">
-                                                                          <button class="nav-link" id="new-task-tab" data-bs-toggle="tab" data-bs-target="#new-task-tab-pane" type="button" role="tab" aria-controls="new-task-tab-pane" aria-selected="false">New Task</button>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <div class="tab-content" id="myTabContent">
-                                                                        <div class="tab-pane fade show active" id="search-task-tab-pane" role="tabpanel" aria-labelledby="search-task-tab" tabindex="0">
-                                                                            ....
-                                                                        </div>
-                                                                        <div class="tab-pane fade" id="new-task-tab-pane" role="tabpanel" aria-labelledby="new-task-tab" tabindex="0">
-                                                                            <!-- <div class="mb-3">
-                                                                                <label for="exampleFormControlInput1" class="form-label">Name</label>
-                                                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                                                              </div>
-                                                                              <select class="form-select" aria-label="Default select example">
-                                                                                <option selected>Enter folder name</option>
-                                                                                <option value="1">One</option>
-                                                                                <option value="2">Two</option>
-                                                                                <option value="3">Three</option>
-                                                                            </select> -->
-
-                                                                            <form class="row g-3">
-                                                                                <div class="col-md-6">
-                                                                                  <label for="inputEmail4" class="form-label">Email</label>
-                                                                                  <input type="email" class="form-control" id="inputEmail4">
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <select class="form-select" aria-label="Default select example">
-                                                                                        <option selected>Enter folder name</option>
-                                                                                        <option value="1">One</option>
-                                                                                        <option value="2">Two</option>
-                                                                                        <option value="3">Three</option>
-                                                                                    </select> 
-                                                                                </div>
-                                                                                <div class="col-3">
-                                                                                    <select class="form-select" aria-label="Default select example">
-                                                                                        <option selected>Enter folder name</option>
-                                                                                        <option value="1">One</option>
-                                                                                        <option value="2">Two</option>
-                                                                                        <option value="3">Three</option>
-                                                                                    </select> 
-                                                                                </div>
-
-                                                                                <div class="col-3">
-                                                                                    <select class="form-select" aria-label="Default select example">
-                                                                                        <option selected>Enter folder name</option>
-                                                                                        <option value="1">One</option>
-                                                                                        <option value="2">Two</option>
-                                                                                        <option value="3">Three</option>
-                                                                                    </select> 
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <select class="form-select" aria-label="Default select example">
-                                                                                        <option selected>Enter folder name</option>
-                                                                                        <option value="1">One</option>
-                                                                                        <option value="2">Two</option>
-                                                                                        <option value="3">Three</option>
-                                                                                    </select> 
-                                                                                </div>
-                                                                                <div class="col-md-4">
-                                                                                  <label for="inputState" class="form-label">State</label>
-                                                                                  <select id="inputState" class="form-select">
-                                                                                    <option selected>Choose...</option>
-                                                                                    <option>...</option>
-                                                                                  </select>
-                                                                                </div>
-
-                                                                                
-                                                                                <div class="col-md-6">
-                                                                                    <label for="inputEmail4" class="form-label">Resource</label>
-                                                                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Enter resource">
-                                                                                </div>
-                                                                                <div class="col-md-6">
-                                                                                    <label for="inputEmail4" class="form-label">No. of People</label>
-                                                                                    <input type="email" class="form-control" id="inputEmail4">
-                                                                                </div>
-                                                                              
-                                                                              </form>
-                                                  
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <div class="document-info-buttons">
-                                                                        <div></div>
-                                                                        <div class="add-equipment-form-buttons-right">
-                                                                            <div>
-                                                                                <a href="" class="btn btn-light"> Cancel</a>
-                                                                            </div>
-                                                                            
-                                                                            <div>
-                                                                                <a href="" class="btn btn-secondary">Save Changes</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdropTwo">
-                                                        <i class="lni lni-image"></i>
-                                                    </button>
-                                                    
-                                                    <!-- Modal -->
-                                                    <div class="modal fade" id="staticBackdropTwo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelTwo" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Add Folder</h1>
-                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                                                        <li class="nav-item" role="presentation">
-                                                                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Search Folder</button>
-                                                                        </li>
-                                                                        <li class="nav-item" role="presentation">
-                                                                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">New Folder</button>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <div class="tab-content" id="myTabContent">
-                                                                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-
-                                                                        </div>
-                                                                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                                                                            <div class="mb-3">
-                                                                                <label for="exampleFormControlInput1" class="form-label">Name</label>
-                                                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                                                              </div>
-                                                                              <select class="form-select" aria-label="Default select example">
-                                                                                <option selected>Enter folder name</option>
-                                                                                <option value="1">One</option>
-                                                                                <option value="2">Two</option>
-                                                                                <option value="3">Three</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <div class="document-info-buttons">
-                                                                        <div></div>
-                                                                        <div class="add-equipment-form-buttons-right">
-                                                                            <div>
-                                                                                <a href="" class="btn btn-light"> Cancel</a>
-                                                                            </div>
-                                                                            
-                                                                            <div>
-                                                                                <a href="" class="btn btn-secondary">Save Changes</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- <li class="nav-item has-submenu document-info-item">
-                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> Folder-2 </a>
-                                                    <ul class="submenu collapse">
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 1 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 2 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 3 </a> </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="nav-item has-submenu document-info-item">
-                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> Folder-3 </a>
-                                                    <ul class="submenu collapse">
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 4 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 5 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 6 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 7 </a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="nav-item has-submenu document-info-item">
-                                                    <a class="nav-link" href="#"> <i class="lni lni-folder"></i> Folder-4</i> </a>
-                                                    <ul class="submenu collapse">
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 8 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 9 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 10 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 11 </a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="nav-item document-info-item">
-                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i>Folder-5 </a>
-                                                </li>
-                                                <li class="nav-item document-info-item">
-                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> Folder-6 </a>
-                                                </li>
-                                                <li class="nav-item has-submenu document-info-item">
-                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> Folder-7</a>
-                                                    <ul class="submenu collapse">
-                                                        <li>
-                                                            <a class="nav-link" href="#"> <i class="lni lni-folder"></i> Dropdown</a>
-                                                            <ul class="submenu collapse">
-                                                                <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 1 This is incompleted task. </a></li>
-                                                                <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 2 </a></li>
-                                                                <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 3 </a> </li>
+                                                <div id="jstree">
+                                                    <!-- in this example the tree is populated from inline HTML -->
+                                                    <ul>
+                                                      <li data-jstree='{"selected" : true , "opened" : true , "icon" : "./img/close-folder.png"}'>Folder-1
+                                                            <ul>
+                                                                <li id="child_node_1">Child node 1</li>
+                                                                <li>Child node 2</li>
                                                             </ul>
-                                                        </li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 2 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 3 </a> </li>
+                                                      </li>
+                                                      <li  data-jstree='{" "icon" : "./img/close-folder.png"}'>Folder-2</li>
+                                                      <li data-jstree='{ "opened" : true,  "icon" : "./img/open-folder.png" }'>Folder-3
+                                                        <ul>
+                                                            <li data-jstree='{"opened" : true, "icon" : "./img/open-folder.png" }'>Child node 1
+                                                                <ul>
+                                                                    <li data-jstree='{"icon" : "./img/file.png" }'>Child node 1</li>
+                                                                    <li data-jstree='{"icon" : "./img/file.png" }'>Child node 2</li>
+                                                                    <li data-jstree='{"icon" : "./img/file.png" }'>Child node 3</li>
+                                                                    <li data-jstree='{"icon" : "./img/file.png" }'>Child node 4</li>
+                                                                    <li data-jstree='{"icon" : "./img/file.png" }'>Child node 5</li>
+                                                                    <li data-jstree='{"icon" : "./img/file.png" }'>Child node 6</li>
+                                                                    <li data-jstree='{"icon" : "./img/file.png" }'>Child node 7</li>
+                                                                    <li data-jstree='{"icon" : "./img/file.png" }'>Child node 8</li>
+                                                                    <li data-jstree='{"icon" : "./img/file.png" }'>Child node 9</li>
+                                                                    <li data-jstree='{"icon" : "./img/file.png" }'>Child node 10</li>
+                                                                    <li data-jstree='{"icon" : "./img/file.png" }'>Child node 11</li>
+                                                                    <li data-jstree='{"icon" : "./img/file.png" }'>Child node 12</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li data-jstree='{"icon" : "./img/close-folder.png" }'>Child node 2</li>
+                                                        </ul>
+                                                    </li>
                                                     </ul>
-                                                </li>
-                                                <li class="nav-item has-submenu document-info-item">
-                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> Folder-8</a>
-                                                    <ul class="submenu collapse">
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 4 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 5 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 6 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 7 </a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="nav-item has-submenu document-info-item">
-                                                    
-                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> Folder-9</a>
-                                                    <ul class="submenu collapse">
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 8 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 9 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 10 </a></li>
-                                                        <li><a class="nav-link" href="#">  <i class="lni lni-add-files"></i>Task 11 </a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="nav-item document-info-item">
-                                                    <a class="nav-link" href="#"><i class="lni lni-folder"></i> Folder-10 </a>
-                                                </li> -->
+                                                  </div>
+                                             
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -714,8 +502,7 @@
                                                             <tr>
                                                                 <td style="border-bottom: 1px solid #ddd;"> 
                                                                     <div class="pictures-dropdown">
-                                                                        <!-- <div>
-                                                                             Button trigger modal 
+                                                                        <div>
                                                                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                                                 <i class="lni lni-image"></i>
                                                                             </button>
@@ -725,54 +512,19 @@
                                                                                 <div class="modal-dialog modal-dialog-centered modal-lg">
                                                                                     <div class="modal-content">
                                                                                         <div class="modal-header">
-                                                                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Add Folder</h1>
+                                                                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Preview</h1>
                                                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                                         </div>
                                                                                         <div class="modal-body">
-                                                                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                                                                                <li class="nav-item" role="presentation">
-                                                                                                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Search Folder</button>
-                                                                                                </li>
-                                                                                                <li class="nav-item" role="presentation">
-                                                                                                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">New Folder</button>
-                                                                                                </li>
-                                                                                            </ul>
-                                                                                            <div class="tab-content" id="myTabContent">
-                                                                                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-
-                                                                                                </div>
-                                                                                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                                                                                                    <div class="mb-3">
-                                                                                                        <label for="exampleFormControlInput1" class="form-label">Name</label>
-                                                                                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                                                                                      </div>
-                                                                                                      <select class="form-select" aria-label="Default select example">
-                                                                                                        <option selected>Enter folder name</option>
-                                                                                                        <option value="1">One</option>
-                                                                                                        <option value="2">Two</option>
-                                                                                                        <option value="3">Three</option>
-                                                                                                    </select>
-                                                                                                </div>
-                                                                                            </div>
+                                                                                            <img src="./img/bg-img.jpg" alt="" class="image-fluid">
                                                                                         </div>
                                                                                         <div class="modal-footer">
-                                                                                            <div class="document-info-buttons">
-                                                                                                <div></div>
-                                                                                                <div class="add-equipment-form-buttons-right">
-                                                                                                    <div>
-                                                                                                        <a href="" class="btn btn-light"> Cancel</a>
-                                                                                                    </div>
-                                                                                                    
-                                                                                                    <div>
-                                                                                                        <a href="" class="btn btn-secondary">Save Changes</a>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
+                                                                                            
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div> -->
+                                                                        </div> 
                                                                         <div class="mt-2">
                                                                             <select class="form-select" aria-label="Default select example">
                                                                                 <option selected>Select picture</option>
@@ -787,11 +539,28 @@
                                                                 <td style="border-bottom: 1px solid #ddd;"> 
                                                                     <div class="pictures-dropdown">
                                                                         <div class="ms-5">
-                                                                    
-                                                                            <button type="button" class="btn btn-primary">
+                                                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                                                 <i class="lni lni-image"></i>
                                                                             </button>
-                                                                        </div>
+                                                                            
+                                                                        
+                                                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                                                    <div class="modal-content">
+                                                                                        <div class="modal-header">
+                                                                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Preview</h1>
+                                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                        </div>
+                                                                                        <div class="modal-body">
+                                                                                            <img src="./img/bg-img.jpg" alt="" class="image-fluid">
+                                                                                        </div>
+                                                                                        <div class="modal-footer">
+                                                                                            
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div> 
                                                                         <div>
                                                                             <input class="form-control form-control-lg" id="formFileLg" type="file">
                                                                         </div>
@@ -1140,7 +909,23 @@
 </section>
 
 
-
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        ...
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+    </div>
+    </div>
+</div>
 
 
 
@@ -1156,6 +941,12 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+
+<!-- 4 include the jQuery library -->
+<script src="assets/js/jstree.js"></script>
+<!-- 5 include the minified jstree source -->
+<script src="assets/js/jstree.min.js"></script>
+
 <!-- custom js -->
 <script src="assets/js/scripts.js"></script>
 
