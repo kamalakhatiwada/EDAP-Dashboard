@@ -56,7 +56,12 @@
 	
     $(function () {
       // 6 create an instance when the DOM is ready
-      $('#jstree').jstree();
+      $('#jstree').jstree({
+		"core": {
+			"check_callback": true,
+		},
+		"plugins": ["contextmenu"]
+	  });
 	
 
       // 7 bind to events triggered on the tree
@@ -74,3 +79,10 @@
       });
     });
    
+
+
+	// select2
+
+	$(document).ready(function() {
+		$('.select-image').select2();
+	});
