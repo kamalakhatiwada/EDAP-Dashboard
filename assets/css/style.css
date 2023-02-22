@@ -104,17 +104,17 @@ a {
   margin-right: 22px;
 }
 
-.edap-users-content-header{
+.edap-content-header{
   padding-top: 20px;
   padding-bottom: 30px;
 }
 
-.edap-users-content-header h2{
+.edap-content-header h2{
   font-size: 32px;
   margin-bottom: 9px;
 }
 
-.edap-users-content-header p{
+.edap-content-header p{
   color: #484242;
 }
 
@@ -128,29 +128,30 @@ a {
 
 
 
-.user-table{
+.edap-data-table{
   background: #fff;
   margin-right: 40px;
   margin-bottom: 75px;
   border-radius: 8px;
+  overflow-x:auto;
 }
 
-.user-table table{
+.edap-data-table table{
   width: 100%;
   box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
   margin-top: 18px;
 }
 
 
-.user-table th{
+.edap-data-table th{
   padding-bottom: 20px;
 }
 
-.user-table tr,td{
+.edap-data-table tr,td{
   padding: 20px;
 }
 
-.user-table img{
+.edap-data-table img{
   width: 30px;
   border-radius: 8px;
   height: 40px;
@@ -162,7 +163,7 @@ a {
   color: var(--bs-table-striped-color);
 }  
 
-.user-table .green {
+.edap-data-table .green {
   border: 1px solid #33B438;
   background: #33b43838;
   border-radius: 22px;
@@ -173,7 +174,7 @@ a {
   margin-top: 5px;
 }
 
-.user-table .green-dot {
+.edap-data-table .green-dot {
   border: 1px solid #33B438;
   background: #33B438;
   border-radius: 55px;
@@ -183,19 +184,20 @@ a {
   left: 7px;
   width: 0%;
 }
-.user-table .inactive{
+
+.edap-data-table .inactive{
   border: 1px solid #ff0000;
   background: #e2130024;
   border-radius: 22px;
   padding: 5px 18px;
   font-size: 14px;
   color: #f20d0d;
-  position: relative;
+  position: absolute;
   margin-top: 5px;
   width:84px;
 }
 
-.user-table .inactive-dot {
+.edap-data-table .inactive-dot {
   border: 1px solid #ff0000;
   background: #ff0000;
   border-radius: 55px;
@@ -213,7 +215,7 @@ a {
   justify-content:start;
 }
 
-.user-table .action .action-icon{
+.edap-data-table .action .action-icon{
  padding-right: 10px;
 }
 
@@ -223,7 +225,7 @@ a {
   margin-bottom: 20px;
 }  
 
-.user-table select {
+.edap-data-table select {
   word-wrap: normal;
   border: 1px solid #C1BBB9;
   border-radius: 8px;
@@ -231,7 +233,7 @@ a {
 }
 
 
-.user-table label{
+.edap-data-table label{
   font-size: 18px;
 }
 
@@ -279,6 +281,17 @@ table.dataTable thead th {
   border-radius: 8px;
 }
 
+.pt{
+  padding-top: 18px;
+}
+
+.border-top-left-radius{
+  border-top-left-radius: 8px;
+}
+
+.border-top-right-radius{
+  border-top-right-radius: 8px;
+}
 
 table.dataTable.no-footer {
   border-bottom: 1px solid #d1cccc;
@@ -319,13 +332,13 @@ table.dataTable.no-footer {
   box-shadow: none;
 }
 
-.user-table .dropdown-toggle {
+.edap-data-table .dropdown-toggle {
   white-space: nowrap;
   border: none;
   background: transparent;
 }
 
-.user-table   .dropdown-toggle::after {
+.edap-data-table  .dropdown-toggle::after {
   display: none !important;
   position: absolute;
   top: 50%;

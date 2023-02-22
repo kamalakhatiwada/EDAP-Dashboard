@@ -3,7 +3,7 @@
 
 
 
-	// COLLAPSIBLE MENU
+// COLLAPSIBLE MENU
     $(document).ready(function () {
         $('#sidebarCollapse').on('click', function () {
             $('#sidebar').toggleClass('active');
@@ -45,11 +45,23 @@
 	}); 
 
 
-	$(document).ready(function() {
+
+// datatable
+
+	$(document).ready(function () {
+		$('#example').DataTable(); 
+	});
+
+
+// select 2 dropdown
+	$(document).ready(function () {
 		$('.select-image').select2();
+	});
 
-		$('#example').DataTable();
 
+// js tree
+	
+	$(document).ready(function() {
 		var menuItems = [  
             { id: 'fields', parent: '#', text: 'Fields' },  
             { id: '1', parent: 'fields', text: 'Field1Lorem ipsum dolor sit amet, consectetur adipiscing'},  
@@ -87,7 +99,7 @@
             
         ]  
 
-		$('#jstree').jstree({
+		$('#SimpleJSTree').jstree({
 			"core": {
 				"data": menuItems,
 			},
