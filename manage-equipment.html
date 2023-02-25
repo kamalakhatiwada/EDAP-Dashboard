@@ -181,7 +181,7 @@
                     </div>
                 </div>
                 <div class="edap-data-table equipment-management">
-                    <table id="example" class="table table-striped">
+                    <table id="manageEquipmentTable" class="table table-striped">
                         <thead>
                             <tr>
                                 <th class="border-top-left-radius">Equipment Type</th>
@@ -840,6 +840,11 @@
 <!-- custom js -->
 <script src="assets/js/scripts.js"></script>
 
+<script>
+    $(document).ready(function () {
+		$('#manageEquipmentTable').DataTable(); 
+	});
+</script>
 
 </body>
 

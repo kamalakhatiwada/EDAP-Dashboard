@@ -173,7 +173,7 @@
                     </div>
                 </div>
                 <div class="edap-data-table">
-                    <table id="example" class="table table-striped">
+                    <table id="usersTable" class="table table-striped">
                         <thead>
                             <tr>
                                 <th class="border-top-left-radius">Username</th>
@@ -874,7 +874,11 @@
 <script type="text/javascript" src="DataTables/datatables.min.js"></script>
 <!-- custom js -->
 <script src="assets/js/scripts.js"></script>
-
+<script>
+    $(document).ready(function () {
+		$('#usersTable').DataTable(); 
+	});
+</script>
 
 </body>
 

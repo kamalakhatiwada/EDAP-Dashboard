@@ -455,6 +455,7 @@ table.dataTable.no-footer {
   padding: 4px 20px;
   border-radius: 8px;
   margin-bottom: 10px;
+  width: 25%;
 }
 
 
@@ -484,7 +485,17 @@ table.dataTable.no-footer {
 }
 
 
+
+
+
+
 /* ================================================= EQUIPMENT MANAGEMENT ======================================================================== */
+
+
+
+
+
+
 
 .edap-equipment-management-buttons{
   display: flex;
@@ -543,9 +554,12 @@ table.dataTable.no-footer {
 
 
 
-
+/* =================================================================================================================================== */
 
 /* ====================== ============================DOCUMENT========================================= ============================== */
+
+/* =================================================================================================================================== */
+
 
 
 
@@ -576,12 +590,6 @@ table.dataTable.no-footer {
   padding: 10px 3px !important;
 }
 
-
-/* .document-info-item a:hover {
-  background: white;
-  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
-  padding: 4px 3px !important;
-} */
 
 .document-info-sidebar-block .document-info-item a:hover {
   background: transparent !important;
@@ -638,7 +646,6 @@ table.dataTable.no-footer {
   border: 3px solid #3AB4F2;
 }
 
-
 .document-info-sidebar::-webkit-scrollbar-thumb {
   background-color: #3AB4F2;
   border-radius: 20px;
@@ -648,8 +655,6 @@ table.dataTable.no-footer {
 ::-webkit-scrollbar-thumb:horizontal {
   height: 10px;
 }
-
-
 
 .document-info-header .btn-primary {
   background-color: #03a9f4;
@@ -709,9 +714,12 @@ h4{
 
 
 .document-info-table{
-  width: 100%;
   border: 1px solid #ddd;
   border-radius: 8px;
+}
+
+.document-info-table table{
+  width: 100%;
 }
 
 .odd-color{
@@ -722,11 +730,71 @@ h4{
   background: #ffffff;
 }
 
-.document-info-tab{
-  padding-top: 30px;
+
+
+
+
+
+
+/*====================================================  EQUIPMENT TABLE  ============================================== */
+
+.edap-document-table table{
+ width: 100%;
+}
+
+.edap-document-table .border-bottom{
+  border-bottom: 1px solid #ddd;
+}
+
+.edap-document-table th{
+  background: #D8F2FF; 
+  padding: 12px;
+}
+
+.edap-document-table .border-top-left-radius{
+  border-top-left-radius: 8px;
+}
+
+.edap-document-table  .border-top-right-radius{
+  border-top-left-radius: 8px;
 }
 
 
+.edap-document-table td{
+  padding: 0;
+}
+
+.edap-document-table .btn-light {
+  background: #3AB4F2;
+  float: right;
+  padding: 7px 7px !important;
+}
+
+.justify-content-center {
+  justify-content: left;
+  background: #EAF8FF;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 60%;
+}
+
+/* ==================================================== modal   ============================ */
+
+.add-folder-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* ============================================================================================================== */
+
+
+
+.document-info-tab{
+  padding-top: 30px;
+}
 
 .nav-tabs .nav-link{
   font-size: 14px;
@@ -801,27 +869,9 @@ h4{
   border-radius: 8px;
 }
 
-.tab-content-form-header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: #D8F2FF;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  padding: 12px;
-  /* border: 1px solid #ddd;
-    border-top-left-radius: 8px;
-     border-bottom-left-radius: 8px; */
-}
 
-.tab-content-form-list{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 10px;
-}
 
-.tab-content-form-header .btn-light {
+.btn-light {
   background: #3AB4F2;
   float: right;
   padding: 10px 17px;
@@ -834,45 +884,6 @@ h4{
   margin-left: 10px;
   width: 450px;
 }
-
-.tab-content-form-list-border-bottom{
-  border-bottom: 1px solid #ddd;
-}
-
-
-.document-info-buttons{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 25px;
-}
-
-
-.document-info-buttons .btn-light{
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 10px 40px;
-  border-radius: 8px;
-  margin-right: 20px;
-}
-
-
-.document-info-buttons .btn-light:hover{
-  color: #000;
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 10px 40px;
-  border-radius: 8px;
-}
-
-
-.document-info-buttons  .btn-secondary{
-  background: #3AB4F2;
-  border: 1px solid #3AB4F2;
-  padding: 10px 16px;
-  border-radius: 8px;
-}
-
 
 .tab-content-table .input-group {
   position: relative;
@@ -905,119 +916,7 @@ h4{
 
 
 
-
-/* ============================ADD EQUIPMENT TABLE ========================================== */
-
-
-
-
-.add-equipment-form .form-control{
-  height: 60px;
-  font-size: 16px;
-  background: #F2F6FF;
-  background-clip: padding-box;
-  border: 1px solid #F2F6FF;
-} 
-
-
-.add-equipment-form .form-label {
-  margin-bottom: 0;
-  font-size: 16px;
-}
-
-.add-equipment-form .form-select{
-  background: #F2F6FF;
-  background-clip: padding-box;
-  border: 1px solid #F2F6FF;
-}
-
-.add-equipment-form .form-select {
-  height: 58px;
-  font-size: 16px;
-}
-
-.require{
-  color: red;
-}
-
-
-
-.edap-form-buttons-right .btn:first-child:active{
-  color: var(--bs-btn-active-color);
-  background: transparent;
-  border-color: var(--bs-btn-active-border-color);
-
-}
-
-
-.edap-form-buttons .btn-light:hover {
-  color: var(--bs-btn-hover-color);
-  background-color: transparent;
-  border: 1px solid #717171;
-}
-
-.edap-form-buttons .btn-light{
-  background: #fff;
-    border: 1px solid #ddd;
-    padding: 13px 40px;
-    border-radius: 8px;
-    margin-right: 13px;
-}
-
-
-
-.edap-form-buttons .btn-secondary {
-  background: #3AB4F2;
-  border: 1px solid #3AB4F2;
-  padding: 13px 40px;
-  border-radius: 8px;
-}
-
-
-.form-control:focus {
-  color: var(--bs-body-color);
-  background-color: var(--bs-form-control-bg);
-  border-color: #55679D;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem #55679d;
-}
-
-
-
-.add-equipment-form .form-select:focus {
-  border-color: #55679D;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem #55679D;
-}
-
-.add-equipment-form .form-check-input:checked {
-  background: #fff;
-  border:1px solid #36d152;
-}
-
-.form-check-input[type=checkbox] {
-  border-radius: 8px;
-}
-
-.add-equipment-form .form-check-input:focus {
-  box-shadow: 0 0 0 0.25rem #36d152;
-}
-
-
-.js-example-basic-single{
-  width: 100%;
-  border-radius: 8px;
-  margin-top: 38px;
-  padding: 16px;
-
-  font-size: 16px;
-  background: #F2F6FF;
-  background-clip: padding-box;
-  border: 1px solid #F2F6FF;
-}
-
-
-/* =========================NOTES================= */
+/* ===================================  NOTES   ========================================================= */
 
 
 
@@ -1025,6 +924,7 @@ h4{
   border: 1px solid #ddd;
   border-radius: 8px;
 }
+
 
 .notes-table .form-select {
   --bs-form-select-bg-img: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
@@ -1070,17 +970,9 @@ h4{
 }
 
 
-.notes-table textarea.form-control {
-  min-height: 54px;
-}
-
-.notes-table td{
-  padding: 0;
-}
-
 
 .page-link {
-  border: 1px solid #fff;
+  border: 1px solid transparent;
   background-color: transparent;
   padding: 4px 12px;
 }
@@ -1089,18 +981,9 @@ h4{
   z-index: 2;
   color: var(--bs-pagination-hover-color);
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid transparent;
 }
 
-.justify-content-center {
-  justify-content: left;
-  background: #EAF8FF;
-  padding: 10px 16px;
-  border-radius: 8px;
-  margin-left: 20px;
-  margin-top: 10px;
-  width: 60%;
-}
 
 .page-item:first-child .page-link {
   border: 1px solid #0dcaf0;
@@ -1119,19 +1002,31 @@ h4{
 }
 
 
-.notes-table .btn-light {
-  background: #3AB4F2;
-  float: right;
-  padding: 7px 7px !important;
-}
 
 
-/* subtask */
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================================================      subtask     ==============================================================================*/
+
+
+
+
+
 .subtask-table  {
   border: 1px solid #ddd;
   border-radius: 8px;
 }
-.subtask-table .form-control {
+
+ .subtask-table .form-control {
   background: #d8f2ff;
   border: 1px solid transparent;
   width: 100%;
@@ -1139,19 +1034,14 @@ h4{
   line-height: 39px;
 }
 
-.subtask-table .btn-light {
-  background: #3AB4F2;
-  float: right;
-  padding: 7px 7px !important;
-}
 
 
-.subtask-table td {
-  padding: 0;
-}
+
+/* =============================================================== pictures =========================================================================================*/
 
 
-/* pictures */
+
+
 
 .pictures-dropdown{
   display: flex;
@@ -1164,9 +1054,7 @@ h4{
   border-radius: 8px;
 }
 
-.pictures-table td{
-  padding: 0;
-}
+
 
 .pictures-table .form-control {
   background: #d8f2ff;
@@ -1178,12 +1066,6 @@ h4{
   margin-bottom: 10px;
   font-size: 16px;
   color: #000;
-}
-
-.pictures-table .btn-light {
-  background: #3AB4F2;
-  float: right;
-  padding: 7px 7px !important;
 }
 
 .pictures-table .pictures-dropdown .form-select {
@@ -1266,14 +1148,14 @@ h4{
 
 .select2-container--default .select2-selection--single {
   background: #d8f2ff;
-    border: 1px solid transparent;
-    width: 114%;
-    height: 53px;
-    line-height: 39px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #000;
+  border: 1px solid transparent;
+  width: 100%;
+  height: 53px;
+  line-height: 39px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -1291,7 +1173,22 @@ h4{
 }
 
 
-/* tables */
+
+
+
+
+
+
+/*=========================================== tables ==============================================*/
+
+
+
+
+
+
+
+
+
 
 
 .tables {
@@ -1299,9 +1196,6 @@ h4{
   border-radius: 8px;
 }
 
-.tables td{
-  padding: 0;
-}
 
 .tables .form-control {
   background: #d8f2ff;
@@ -1313,22 +1207,115 @@ h4{
     margin-bottom: 10px;
 }
 
-.tables .btn-light {
-  background: #3AB4F2;
-  float: right;
-  padding: 7px 7px !important;
+
+
+
+
+
+
+/* ================================================== ADD EQUIPMENT TABLE ========================================== */
+
+
+
+
+
+
+
+.add-equipment-form .form-control{
+  height: 60px;
+  font-size: 16px;
+  background: #F2F6FF;
+  background-clip: padding-box;
+  border: 1px solid #F2F6FF;
+} 
+
+.add-equipment-form .form-label {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.add-equipment-form .form-select{
+  background: #F2F6FF;
+  background-clip: padding-box;
+  border: 1px solid #F2F6FF;
+}
+
+.add-equipment-form .form-select {
+  height: 58px;
+  font-size: 16px;
+}
+
+.require{
+  color: red;
+}
+
+.edap-form-buttons-right .btn:first-child:active{
+  color: var(--bs-btn-active-color);
+  background: transparent;
+  border-color: var(--bs-btn-active-border-color);
 }
 
 
+.edap-form-buttons .btn-light:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: transparent;
+  border: 1px solid #717171;
+}
+
+.edap-form-buttons .btn-light{
+  background: #fff;
+    border: 1px solid #ddd;
+    padding: 13px 40px;
+    border-radius: 8px;
+    margin-right: 13px;
+}
+
+.edap-form-buttons .btn-secondary {
+  background: #3AB4F2;
+  border: 1px solid #3AB4F2;
+  padding: 13px 40px;
+  border-radius: 8px;
+}
+
+.add-equipment-form .form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-form-control-bg);
+  border-color: #55679D;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #55679d;
+}
 
 
+.add-equipment-form .form-select:focus {
+  border-color: #55679D;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #55679D;
+}
+
+.add-equipment-form .form-check-input:checked {
+  background: #fff;
+  border:1px solid #36d152;
+}
+
+.form-check-input[type=checkbox] {
+  border-radius: 8px;
+}
+
+.add-equipment-form .form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem #36d152;
+}
 
 
+.select2-hidden-accessible { 
+  position: fixed !important; 
+}
 
-
-
-
-
+.discipline-selection {
+  background: #F2F6FF !important;
+  border: 1px solid transparent;
+  height: 58px;
+  line-height: 83px;
+}
 
 
 

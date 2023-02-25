@@ -23,6 +23,9 @@
 
      <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!--select 2  -->
+    <link href="assets/css/select2.min.css" rel="stylesheet" />
    
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -186,20 +189,27 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="mb-3">
+                                <div class="mb-3 ms-1">
                                     <label for="formGroupExampleInput" class="form-label">Equipment Type</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Dragline excav |">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <select class="js-example-basic-single" name="state">
-                                        <option value="AL">Alabama</option>
-                                          ...
-                                        <option value="WY">Wyoming</option>
-                                      </select>
-                                    <!-- <label for="formGroupExampleInput" class="form-label">Discipline<span class="require">*</span> </label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Engineering"> -->
+                                    <div class="discipline-dropdwon flex-column">
+                                        <div class="mb-3">
+                                            <label class="form-label">Discipline</label>
+                                        </div>
+                                        <div >
+                                            <select class="select-discipline" name="state">
+                                                <option value="AL">Alabama</option>
+                                                <option value="WY">Wyoming</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                   
+                            
+                                   
                                 </div>
                             </div>
                         </div>
@@ -299,10 +309,19 @@
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="DataTables/datatables.min.js"></script>
-<!-- custom js -->
-<script src="assets/js/scripts.js"></script>
+
+<!-- select to -->
+<script src="assets/js/select2.min.js"></script>
 
 
+<script>
+    $(document).ready(function() {
+		$('.select-discipline').select2({
+            selectionCssClass:'discipline-selection',
+            width:'100%'
+        });
+	});
+</script>
 </body>
 
 </html>
